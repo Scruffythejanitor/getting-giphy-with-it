@@ -4,9 +4,60 @@ body{
 .btn{
     margin: 20px 10px;
     border-radius: 7px;
-    background-color: rgb(242, 245, 248);
+    background-color: rgb(226, 230, 236);
     color: rgb(180, 194, 207);
     border: lightslategray;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0,0,0,0.0);
 }
+.btn:active{
+    border: none !important;
 
-
+    background-color: rgb(226, 230, 236) !important;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(225,225,225,0.7),
+                -0.5px -0.5px 0 rgba(225,225,225,0.7),
+                0px 12px 10px -10px rgba(0,0,0,0.05) !important;
+    border: 1px solid rgba(0,0,0,0.01) !important;
+    outline: none;
+}
+.btn:hover{
+    background-color: rgb(210, 215, 223) !important;
+    border: none !important;
+    outline: none!important;
+}
+.btn:focus{
+    outline: none!important;
+    border: 0px!important;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(225,225,225,0.7),
+                -0.5px -0.5px 0 rgba(225,225,225,0.7),
+                0px 12px 10px -10px rgba(0,0,0,0.05) !important;
+}
+img{
+    width: 75%;
+    margin: auto;
+    
+    border-radius: 20px;
+    box-shadow: 8px 8px 14px -1px rgba(0,0,0,0.15),
+                -8px -8px 14px -1px rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.0);
+}
+p{
+    color: rgb(153, 165, 177);
+}
+label{
+    color: rgb(180, 194, 207);
+}
+#giphySearch{
+    background-color: rgb(242, 245, 248);
+    border: lightslategray;
+    color: rgb(180, 194, 207);
+}
+input::placeholder { 
+    color: rgb(180, 194, 207) !important;
+}
+.activate{
+    
+}

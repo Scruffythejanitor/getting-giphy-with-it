@@ -3,7 +3,7 @@ $(document).ready(function () {
   var topicsToChoose = ['cats', 'dogs', 'movies', 'simpsons', 'dancing', 'the office', "funny"]
 
 
-  $("#submit").on("click", function () {
+  $(document).on("click", "#submit", function () {
     event.preventDefault();
     var userTopics = $("#giphySearch").val().trim();
     topicsToChoose.push(userTopics);
@@ -15,7 +15,7 @@ $(document).ready(function () {
     $(".header-button").empty()
     for (let i = 0; i < topicsToChoose.length; i++) {
       var button = topicsToChoose[i];
-      $('.header-button').append("<button class=\"btn btn-primary topic\">" + button + "</button>")
+      $('.header-button').append("<button class=\"btn topic\">" + button + "</button>")
       // $('button').addClass("btn btn-primary topic")
 
     }
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   buttons()
   $(document).on("click", ".topic", function () {
-    // event.preventDefault();
+    event.preventDefault();
     $('.images').empty()
     var topicClicked = $(this).text().trim()
     console.log(this);
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
         var rating = results[i].rating;
 
-        var p = $("<p>").text("Rating: " + rating);
+        var p = $("<p>").text("Rating: " + rating +  "  (click gif to animate)");
 
         var personImage = $("<img>");
         personImage.attr("src", results[i].images.original_still.url);
