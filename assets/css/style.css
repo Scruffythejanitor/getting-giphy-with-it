@@ -1,4 +1,12 @@
-.btn{
-    margin: 5px;
-    border-radius: 7px;
+body{
+    background-color: rgb(226, 230, 236);
 }
+.btn{
+    margin: 20px 10px;
+    border-radius: 7px;
+    background-color: rgb(242, 245, 248);
+    color: rgb(180, 194, 207);
+    border: lightslategray;
+}
+
+

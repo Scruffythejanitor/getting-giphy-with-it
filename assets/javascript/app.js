@@ -22,7 +22,7 @@ $(document).ready(function () {
   }
 
   buttons()
-  $(".topic").on("click", function () {
+  $(document).on("click", ".topic", function () {
     // event.preventDefault();
     $('.images').empty()
     var topicClicked = $(this).text().trim()
@@ -62,7 +62,7 @@ $(document).ready(function () {
 
   })
 
-  $(".gif").on("click", function () {
+  $(document).on("click", ".gif", function () {
     console.log(state);
     var state = $(this).attr("data-state")
     if (state === "still") {
