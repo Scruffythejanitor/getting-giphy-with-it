@@ -10,3 +10,5 @@ What's that you say? Those gifs arent *giffing?* That, my friend, is called a fe
 
 ## That's it.
 ## This is my **GIF** to you!
+
+[Click Here To See It In Action](https://scruffythejanitor.github.io/getting-giphy-with-it/)
